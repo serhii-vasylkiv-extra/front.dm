@@ -1,0 +1,17 @@
+<tr>
+    <td><?php echo $this->escape($this->id);?></td>
+    <td><?php echo $this->escape($this->jobTitle);?></td>
+    <td><?php echo $this->escape($this->jobSalary);?></td>
+    <td><?php echo $this->escape($this->location);?></td>
+    <td><?php echo $this->escape($this->contactEmail);?></td>
+    <td><?php echo $this->escape($this->endTime);?></td>
+    <td><?php echo $this->escape($this->occupation);?></td>
+    <td><?php echo $this->escape($this->industry);?></td>
+    <td><?php echo $this->escape($this->createTime);?></td>
+    <td><?php echo $this->escape($this->modifyTime);?></td>
+    <td>
+        <a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'update', 'id'=>$this->id));?>">Update</a>
+        <a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'delete', 'id'=>$this->id));?>">Delete</a>
+    </td>
+
+</tr>

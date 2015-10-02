@@ -1,0 +1,20 @@
+<p><a href="<?php echo $this->url(array('controller'=>'index','action'=>'add'));?>">Add</a></p>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Salary</th>
+            <th>Location</th>
+            <th>Email</th>
+            <th>End time</th>
+            <th>Occupation</th>
+            <th>Industry</th>
+            <th>Create time</th>
+            <th>Modify time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php echo $this->partialLoop('partials/job.phtml', $this->jobs); ?>
+    </tbody>
+</table>
